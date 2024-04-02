@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{%block content%}
+
+{%for message in messages%}
+<div class="message {{message.tags}}">
+    {{message}}
+</div>
+    {%endfor%}
+<div class="center">
+    {%if user.is_authenticated%}
+    <p>welcome, {{user.username}}. Thanks for logging in.</p>
+    {%else%}
+    <p>Welcome, new user. Please log in. </p>
+    <a href="{%url 'login'%}">Login</a> or <a href="{%url 'register'%}">Register</a>
+    {%endif%}
+</div>
+{%endblock%}
