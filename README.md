@@ -107,5 +107,3 @@ Your contributions will help me continue creating helpful content. Thank you for
 ## Contributing
 
 This project was made to help spread knowledge. If you'd like to contribute, feel free to fork the repository, make your changes, and submit a pull request.
-
-# Django-Auth-Email-Verification
